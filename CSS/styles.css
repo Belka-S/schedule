@@ -1,0 +1,94 @@
+:root {
+  --first-letter-colour: red;
+  --fitst-letter-ident: 20px;
+  --first-letter-size: 36px;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+  width: 1200px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+header a,
+footer a {
+  color: black;
+}
+main a {
+  color: maroon;
+}
+a:hover {
+  color: crimson;
+}
+a:active {
+  color: yellowgreen;
+}
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 58px;
+  font-weight: 700;
+  margin: 0 auto;
+}
+h1 a {
+  color: rgb(0, 118, 0);
+  text-shadow: 2px 2px 5px grey;
+}
+h2 {
+  text-indent: var(--fitst-letter-ident);
+  font-size: 26px;
+  margin: 0 auto;
+}
+h2::first-letter {
+  color: var(--first-letter-colour);
+  font-size: var(--first-letter-size);
+}
+/* table styles */
+.table-name {
+  font-size: 26px;
+  font-weight: bold;
+  text-indent: var(--fitst-letter-ident);
+  line-height: 5px;
+}
+.table-name::first-letter {
+  color: var(--first-letter-colour);
+  font-size: var(--first-letter-size);
+}
+table {
+  border-collapse: collapse;
+  line-height: 15px;
+}
+thead {
+  font-size: large;
+  line-height: 25px;
+}
+table th,
+table td {
+  padding: 5px;
+  border: 2px solid #2a2a2a;
+  width: 185px;
+}
+.top {
+  border-top: none;
+  text-align: center;
+  font-style: italic;
+}
+.bottom {
+  border-bottom: none;
+  font-size: large;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px lightslategray;
+}
+.bottom:hover {
+  background-color: Gainsboro;
+}
+.nomber {
+  width: 15px;
+  font-size: large;
+}
+th[rowspan='2'] {
+  color: black;
+}
+.time {
+  width: 100px;
+}
