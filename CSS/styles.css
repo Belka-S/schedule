@@ -3,8 +3,34 @@
   --fitst-letter-ident: 20px;
   --first-letter-size: 36px;
 }
+
+/* -------UTILITIES------ */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+}
+
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   width: 1200px;
   margin: 0 auto;
 }
@@ -18,14 +44,15 @@ footer a {
 main a {
   color: maroon;
 }
-a:hover {
+a:hover,
+a:focus {
   color: crimson;
 }
 a:active {
   color: yellowgreen;
 }
 h1 {
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   font-size: 58px;
   font-weight: 700;
   margin: 0 auto;
@@ -39,10 +66,42 @@ h2 {
   font-size: 26px;
   margin: 0 auto;
 }
+
 h2::first-letter {
   color: var(--first-letter-colour);
   font-size: var(--first-letter-size);
 }
+
+/* <!--Розклад занять на 2022 рік--> */
+
+header,
+footer {
+  padding-left: 25px;
+}
+
+.week {
+  display: flex;
+  justify-content: space-around;
+}
+
+.week .externat {
+  display: flex;
+  font-size: 400;
+}
+
+.externat ul:not(:first-child) {
+  margin-left: 2px;
+  list-style: none;
+}
+
+.externat ul:not(:first-child) a {
+  color: black;
+}
+
+.externat ul:not(:first-child) a:hover {
+  color: green;
+}
+
 /* table styles */
 .table-name {
   font-size: 26px;
@@ -79,16 +138,29 @@ table td {
   font-weight: bold;
   text-shadow: 1px 1px 2px lightslategray;
 }
-.bottom:hover {
+.top:hover {
   background-color: Gainsboro;
 }
 .nomber {
   width: 15px;
   font-size: large;
 }
-th[rowspan='2'] {
+th[rowspan="2"],
+span {
   color: black;
 }
 .time {
   width: 100px;
+}
+.in-line {
+  width: 20px;
+  border: 2px solid #2a2a2a;
+  display: inline;
+}
+.book {
+  display: flex;
+  flex-direction: row;
+}
+.inline {
+  padding-right: 40px;
 }
